@@ -26,7 +26,7 @@ jobs:
             "-Dsonar.projectKey=tensorflow" `
             "-Dsonar.projectName=6-tensorflow" `
             "-Dsonar.sources=." `
-            "-Dsonar.exclusions=**/tests/**,**/*.md,**/java/**/*" `
+            "-Dsonar.exclusions=**/tests/**,**/*.md,**/java/**/*,**/*.java" `
             "-Dsonar.host.url=http://localhost:9000" `
             "-Dsonar.login=${{ secrets.SONAR_TOKEN }}"
         env:
